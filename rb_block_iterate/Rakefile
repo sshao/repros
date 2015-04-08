@@ -1,0 +1,5 @@
+require "rake/extensiontask"
+
+Rake::ExtensionTask.new "fun" do |ext|
+  ext.lib_dir = "lib/fun"
+end
