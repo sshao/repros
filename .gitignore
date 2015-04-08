@@ -1,3 +1,5 @@
 .rbx
 .o
 .so
+.bundle
+tmp
