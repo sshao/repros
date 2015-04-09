@@ -57,7 +57,7 @@ rb_block_call yields the first argument:
 * TMail's Scanner implementation as included in actionmailer 1.3.6 [yields multiple values](https://github.com/rails/rails/blob/v1.2.6/actionmailer/lib/action_mailer/vendor/tmail/scanner_r.rb#L150-L158) instead of yielding an *array* of multiple values
 
 this isn't an issue on MRI 1.8.7/REE because:
-* MRI 1.8.7/REE come with racc version 1.4.5, which doesn't have the `HAVE_RB_BLOCK_CALL` check (as `rb_block_call` did not exist in 1.8.7/REE)
+* MRI 1.8.7/REE come with racc version 1.4.5, which doesn't have the `HAVE_RB_BLOCK_CALL` check
 * so `rb_iterate` is used, which returns the 2-valued array as expected
 
 on rbx-1.4.4:
